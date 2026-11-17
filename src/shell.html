@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Rissa al Bar Sport</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<style>
+  html,body{margin:0;height:100%;background:#07070d;color:#ddd;overflow:hidden;touch-action:none;user-select:none;-webkit-user-select:none;font-family:'Press Start 2P',monospace}
+  #wrap{position:fixed;inset:0 0 34px 0;display:flex;align-items:center;justify-content:center}
+  canvas{image-rendering:pixelated;image-rendering:crisp-edges;box-shadow:0 0 0 4px #1c1830,0 0 40px #000;background:#000}
+  #help{position:fixed;left:0;right:0;bottom:0;height:34px;display:flex;align-items:center;justify-content:center;gap:22px;font-size:9px;color:#9a93b8;background:#0e0c1a;border-top:2px solid #1c1830;flex-wrap:wrap;padding:0 8px;box-sizing:border-box}
+  #help b{color:#ffd35a;font-weight:normal}
+  #touch{display:none;position:fixed;left:0;right:0;bottom:40px;pointer-events:none;justify-content:space-between;padding:0 14px}
+  #touch .grp{display:grid;gap:8px;pointer-events:auto}
+  #touch .pad{grid-template-columns:repeat(3,52px);grid-template-rows:repeat(2,52px)}
+  #touch .act{grid-template-columns:repeat(3,62px);align-items:end}
+  #touch button{font-family:inherit;font-size:9px;color:#fff;background:rgba(40,30,70,.55);border:2px solid rgba(255,255,255,.35);border-radius:10px;touch-action:none;padding:0}
+  #touch button:active,#touch button.on{background:rgba(255,80,140,.6)}
+  #touch .act button{height:62px;border-radius:50%}
+  body.touch #touch{display:flex}
+  body.touch #help{display:none}
+  body.touch #wrap{inset:0 0 0 0;align-items:flex-start;padding-top:8px}
+</style>
+</head>
+<body>
+<div id="wrap"><canvas id="c"></canvas></div>
+<div id="help">
+  <span><b>P1</b> A/D muovi · W salta · S para · F pugno · G calcio · H speciale</span>
+  <span><b>P2</b> ←/→ · ↑ salta · ↓ para · K pugno · L calcio · Ò speciale</span>
+  <span><b>INVIO</b> conferma · <b>ESC</b> pausa · <b>M</b> audio · <b>N</b> musica · <b>T</b> manichino</span>
+</div>
+<div id="touch">
+  <div class="grp pad">
+    <span></span><button data-k="KeyW">▲</button><span></span>
+    <button data-k="KeyA">◀</button><button data-k="KeyS">▼</button><button data-k="KeyD">▶</button>
+  </div>
+  <div class="grp act">
+    <button data-k="KeyF">PUGNO</button><button data-k="KeyG">CALCIO</button><button data-k="KeyH">SPEC</button>
+  </div>
+</div>
