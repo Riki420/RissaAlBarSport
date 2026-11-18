@@ -7,6 +7,7 @@ Apri `index.html` con un browser (Chrome, Edge, Firefox).
 
 **P1:** A/D muovi · W salta · S para · F pugno · G calcio · H speciale
 **P2:** frecce · K pugno · L calcio · Ò (o tastierino 1/2/3)
+**Presa (wrestling):** avanti + pugno quando sei vicino all'avversario. Funziona anche se l'avversario para.
 **Altro:** INVIO conferma · ESC pausa · M audio · N musica · T manichino (allenamento)
 
 **Joypad** (il 1° collegato è P1, il 2° è P2): croce o levetta muove · A pugno · B calcio · X/Y/RB/RT speciale · START pausa/conferma · SELECT indietro (in pausa: torna al menu).
@@ -17,6 +18,7 @@ Arcade, Versus CPU, 2 Giocatori, Sopravvivenza, Allenamento, Opzioni (difficolt�
 
 ## Personaggi
 Badilino, Il Pitti, Bombarolo, Lollo Miao, Giuso, Bingo Baby, Michelo.
+Ogni personaggio ha la sua presa: Scivolone Unto, Abbraccio del Piumino, Suplex di Capodanno, Servito al Bancone, Aratura di Fradusto, Abbraccio Alcolico, Bocciatura.
 Arene: Bar Sport, Bayon's Caffè, Da Ceppo (sala giochi con biliardo, calciobalilla e flipper).
 
 ## Online e sul telefono

@@ -21,6 +21,7 @@ Picchiaduro arcade 2D in pixel art per browser, in stile Street Fighter. Tutto g
 - **Da Ceppo** è una sala interna: il piano vicino ha un'apertura (x 226-420, y 38-190) da cui si vede la sala in fondo. Le animazioni del piano lontano vanno ritagliate con `clip` su quell'apertura.
 - **Musica**: sequencer chiptune in `SONGS` (title, barsport, bayons, ceppo, victory). Le note sono stringhe di 16 passi per battuta: `-` prolunga la nota, `.` è una pausa.
 - **IA**: `aiInput`, regolata da `DIFFS` (Facile, Normale, Difficile, Leggenda).
+- **Prese** (sezione PRESE prima di `updateFighter`): avanti + pugno entro `THROW_RANGE` contro un avversario a terra (anche se para). `THROWS` dà a ogni personaggio nome e tipo (`slam`, `suplex`, `toss`). Chi afferra è nello stato `grab` (`updateGrab` muove la vittima). La vittima passa per `held`, `thrown` e `down`, che sono disegnati ruotati attorno al centro del corpo (`f.cy`, `f.rot`). Il danno all'atterraggio è in `throwLand`/`throwDamage`. Negli stati `NOHIT` non si viene colpiti. Per aggiungere un personaggio, aggiungi anche la sua voce in `THROWS`.
 - **Danni**: `applyHit` applica forza, difesa, abilità passive, barra Rabbia/Super e modalità allenamento.
 
 ## Personaggi (CHARS / STATS / PAL / headXxx)
