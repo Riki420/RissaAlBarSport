@@ -14,7 +14,9 @@ Picchiaduro arcade 2D in pixel art per browser, in stile Street Fighter. Tutto g
 ## Architettura (src/game.js)
 - La risoluzione interna è 384x216, ingrandita via CSS con `image-rendering: pixelated`. Arena larga 576 (`WW`) con camera che scorre; pavimento a `GROUND=204`.
 - Il loop è a passo fisso, 60 step/s: `step()` per la logica e `render()` per il disegno. Stati in `mode`: title, options, select, stage, vs, fight, over, continue, ending, results.
-- Le modalità sono in `gameMode`: arcade, versus, 2p, survival, training.
+- Le modalità sono in `gameMode`: arcade, versus, 2p, rissa, survival, training. Lo stato `setup4` è la schermata delle impostazioni della Rissa a 4.
+- **Lottatori e squadre**: `fighters` contiene tutti i lottatori (2 o 4); `f1`/`f2` restano alias di `fighters[0]`/`[1]` e si usano solo nelle parti 1 contro 1 (HUD `drawBar`, Allenamento, Sopravvivenza, schermata finale 1 contro 1). Ogni `Fighter` ha `slot`, `team` e `cpu`. Bersagli e danni passano da `enemiesOf(f)`, `targetOf(f)` (nemico più vicino, passato come `op` a `updateFighter`/`aiInput`) e `projTarget(p)`. Il K.O. passa da `onKO(att)`: nel 4 il round finisce quando `teamsAlive()` lascia una sola squadra. `wins` ha un elemento per squadra.
+- **Rissa a 4**: le impostazioni sono in `rissa` (`variant` ffa/duo, `humans`, `teams`). Ci sono HUD a 4 (`drawHud4`), indicatori sopra la testa (`drawMarkers`, colori `PCOL`/`TCOL`) e fine incontro (`renderOver4`). P3/P4 sono solo joypad: `pollPads` scrive i codici virtuali `P3left`, `P4punch`… (mappe `PMAPS`). I menu accettano `K_UP`/`K_DOWN`/`K_LEFT`/`K_RIGHT`.
 - **Motore sprite** (`buildSprite`): i personaggi sono disegnati da uno scheletro con articolazioni definite in `basePose`/`poseOf`. Angoli in gradi: 0 = verso il basso, 90 = in avanti, 180 = in alto. Gli arti sono tratti spessi con ombra e luce, le teste sono pixel art fatta con rettangoli (`headXxx(R,P)`, coordinate relative al collo, x positiva = verso dove guarda). Dopo il disegno c'è una post-elaborazione: soglia alfa, palette quantizzata e contorno di 1px. Gli sprite sono in cache per id, posa e frame.
 - Il testo sul cappello di Giuso usa `MIRROR` per non comparire rovesciato quando guarda a sinistra.
 - **Arene**: `paintBarSportFar/Near`, `paintBayonsFar/Near` e `paintCeppoFar/Near` disegnano su canvas fuori schermo con parallasse (piano lontano a velocità 0.5). Ogni voce di `STAGES` ha nome, funzioni di disegno e brano (`song`); `NS` è il numero di arene, usato da selezione, arcade e sopravvivenza. Le animazioni (ventilatore, cabinato, flipper, insegne) sono in `drawStage`, divise per indice di arena.
@@ -43,6 +45,7 @@ Picchiaduro arcade 2D in pixel art per browser, in stile Street Fighter. Tutto g
 ## Comandi
 - **P1**: WASD + F (pugno), G (calcio), H (speciale).
 - **P2**: frecce + K, L, Ò (Semicolon) oppure tastierino 1/2/3.
+- **P3/P4** (solo Rissa a 4): joypad 3 e 4.
 - **Altri tasti**: ESC pausa, M audio, N musica, T manichino in allenamento.
 - **Joypad** (`pollPads`, chiamato a ogni `step()`): il 1° joypad simula i tasti di P1 e il 2° quelli di P2, scrivendo in `keys`/`buf`. A pugno, B calcio, X/Y/RB/RT speciale, START = ESC in combattimento e INVIO nei menu, SELECT = ESC (in pausa = INVIO, torna al menu).
 

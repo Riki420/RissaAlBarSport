@@ -14,7 +14,9 @@ Apri `index.html` con un browser (Chrome, Edge, Firefox).
 Se il browser non lo rileva subito, premi un pulsante del joypad con la pagina aperta.
 
 ## Modalità
-Arcade, Versus CPU, 2 Giocatori, Sopravvivenza, Allenamento, Opzioni (difficoltà, round, tempo, musica).
+Arcade, Versus CPU, 2 Giocatori, **Rissa a 4**, Sopravvivenza, Allenamento, Opzioni (difficoltà, round, tempo, musica).
+
+**Rissa a 4**: fino a quattro lottatori insieme, in due varianti, *tutti contro tutti* (vince l'ultimo in piedi) o *2 contro 2* a squadre, rossa contro blu. Scegli quanti giocatori sono umani: i posti liberi li prende la CPU. P1 usa la tastiera WASD o il joypad 1, P2 le frecce o il joypad 2, P3 e P4 i joypad 3 e 4.
 
 ## Personaggi
 Badilino, Il Pitti, Bombarolo, Lollo Miao, Giuso, Bingo Baby, Michelo.
