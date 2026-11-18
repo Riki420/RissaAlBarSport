@@ -22,7 +22,7 @@ Nella Rissa a 4 l'arena è più larga, la camera allarga lo zoom quando i lottat
 ## Personaggi
 Badilino, Il Pitti, Bombarolo, Lollo Miao, Giuso, Bingo Baby, Michelo.
 Ogni personaggio ha la sua presa: Scivolone Unto, Abbraccio del Piumino, Suplex di Capodanno, Servito al Bancone, Aratura di Fradusto, Abbraccio Alcolico, Bocciatura.
-Arene: Bar Sport, Bayon's Caffè, Da Ceppo (sala giochi con biliardo, calciobalilla e flipper), Spiaggetta (chiosco tra gli alberi, con patio e prato).
+Arene: Bar Sport, Bayon's Caffè, Da Ceppo (sala giochi con biliardo, calciobalilla e flipper), Spiaggetta (chiosco tra gli alberi, con patio e prato), Centro Amnil - Esterno (complesso in cemento con ponte su pilastri).
 
 ## Online e sul telefono
 Si gioca su **https://riki420.github.io/RissaAlBarSport/**.
