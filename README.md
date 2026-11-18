@@ -19,8 +19,14 @@ Arcade, Versus CPU, 2 Giocatori, Sopravvivenza, Allenamento, Opzioni (difficolt�
 Badilino, Il Pitti, Bombarolo, Lollo Miao, Giuso, Bingo Baby.
 Arene: Bar Sport, Bayon's Caffè, Da Ceppo (sala giochi con biliardo, calciobalilla e flipper).
 
+## Online e sul telefono
+Si gioca su **https://riki420.github.io/RissaAlBarSport/**.
+Sul telefono si può installare come app: dal menu del browser scegli "Aggiungi a schermata Home" (o "Installa app"). Si apre a schermo intero e funziona anche senza internet.
+
 ## Struttura
 - `index.html` — il gioco completo, pronto da aprire
 - `src/game.js` — codice del gioco (sprite, arene, musica, logica)
 - `src/shell.html` — pagina HTML/CSS che contiene il gioco
 - `build.py` — rigenera `index.html` dopo aver modificato i file in `src/` (`python build.py`)
+- `assets/` — icone e immagine di anteprima del link (le icone si rigenerano con `python tools/make_icons.py`)
+- `manifest.webmanifest`, `sw.js` — installazione come app e gioco senza internet

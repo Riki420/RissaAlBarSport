@@ -7,6 +7,9 @@ Picchiaduro arcade 2D in pixel art per browser, in stile Street Fighter. Tutto g
 - `src/shell.html`: HTML/CSS della pagina, barra comandi e pulsanti touch.
 - `build.py`: unisce shell e game.js in `index.html`. **Va lanciato dopo ogni modifica** (`python build.py`).
 - `index.html`: file generato. Non va modificato a mano.
+- **Sito**: pubblicato con GitHub Pages da `main` (https://riki420.github.io/RissaAlBarSport/). I meta tag per l'anteprima del link (og:*) e il collegamento al manifest sono in `src/shell.html`; gli URL di og:image devono essere assoluti.
+- `manifest.webmanifest` e `sw.js` rendono il gioco installabile e giocabile offline. Il service worker usa prima la rete per i file del sito, quindi gli aggiornamenti arrivano subito. Se aggiungi file da tenere in cache, aggiornali in `CORE` e cambia `VERSION`.
+- `assets/`: icone (generate da `tools/make_icons.py`, pixel art 32x32 ingrandita) e `og-image.jpg` (1200x630, schermata del titolo).
 
 ## Architettura (src/game.js)
 - La risoluzione interna è 384x216, ingrandita via CSS con `image-rendering: pixelated`. Arena larga 576 (`WW`) con camera che scorre; pavimento a `GROUND=204`.
