@@ -8,6 +8,7 @@ Apri `index.html` con un browser (Chrome, Edge, Firefox).
 **P1:** A/D muovi · W salta · S para · F pugno · G calcio · H speciale
 **P2:** frecce · K pugno · L calcio · Ò (o tastierino 1/2/3)
 **Presa (wrestling):** avanti + pugno quando sei vicino all'avversario. Funziona anche se l'avversario para.
+**Armi:** ogni tanto cadono dal cielo una mazza o un coltello: passaci sopra e premi **S** per raccoglierli. Con l'arma il pugno diventa un colpo d'arma; dopo qualche colpo si rompe. Armi e schizzi di sangue si possono spegnere nelle Opzioni.
 **Altro:** INVIO conferma · ESC pausa · M audio · N musica · T manichino (allenamento)
 
 **Joypad** (il 1° collegato è P1, il 2° è P2): croce o levetta muove · A pugno · B calcio · X/Y/RB/RT speciale · START pausa/conferma · SELECT indietro (in pausa: torna al menu).
@@ -25,6 +26,7 @@ Ogni personaggio ha la sua presa: Scivolone Unto, Abbraccio del Piumino, Suplex 
 Arene: Bar Sport, Bayon's Caffè, Da Ceppo (sala giochi con biliardo, calciobalilla e flipper), Spiaggetta (chiosco tra gli alberi, con patio e prato), Centro Amnil - Esterno (complesso in cemento con ponte su pilastri).
 
 ## Online e sul telefono
+Sul telefono c'è il pulsante **⛶** in alto a destra per lo schermo intero. Su iPhone Safari lo schermo intero non è disponibile: aggiungi il gioco alla schermata Home.
 Si gioca su **https://riki420.github.io/RissaAlBarSport/**.
 Sul telefono si può installare come app: dal menu del browser scegli "Aggiungi a schermata Home" (o "Installa app"). Si apre a schermo intero e funziona anche senza internet.
 

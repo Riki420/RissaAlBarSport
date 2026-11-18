@@ -27,6 +27,9 @@ Picchiaduro arcade 2D in pixel art per browser, in stile Street Fighter. Tutto g
 - **Musica**: sequencer chiptune in `SONGS` (title, barsport, bayons, ceppo, spiaggetta, amnil, victory). Le note sono stringhe di 16 passi per battuta: `-` prolunga la nota, `.` è una pausa.
 - **IA**: `aiInput`, regolata da `DIFFS` (Facile, Normale, Difficile, Leggenda).
 - **Prese** (sezione PRESE prima di `updateFighter`): avanti + pugno entro `THROW_RANGE` contro un avversario a terra (anche se para). `THROWS` dà a ogni personaggio nome e tipo (`slam`, `suplex`, `toss`). Chi afferra è nello stato `grab` (`updateGrab` muove la vittima). La vittima passa per `held`, `thrown` e `down`, che sono disegnati ruotati attorno al centro del corpo (`f.cy`, `f.rot`). Il danno all'atterraggio è in `throwLand`/`throwDamage`. Negli stati `NOHIT` non si viene colpiti. Per aggiungere un personaggio, aggiungi anche la sua voce in `THROWS`.
+- **Armi** (sezione ARMI dopo `ATK`): `items` sono gli oggetti in campo, generati in `updateItems` (con `settings.weapons`) e disegnati da `drawItem`. Si raccolgono con `tryPickup`, premendo giù mentre si è sopra. `f.weapon={type,uses}`; `atkData(f,type)` restituisce `WEAP[...]` al posto del pugno. Le pose con l'arma hanno la chiave con il suffisso `W` e `hold:'bat'|'knife'` in `buildSprite`. `dropWeapon` si chiama al K.O. e alla presa.
+- **Sangue**: `bleed(x,y,dir,n)` crea particelle rosse e macchie (`stains`, che svaniscono). Si spegne con `settings.blood`.
+- **Schermo intero**: il pulsante `#fs` in `src/shell.html` è visibile solo con `body.touch`. La logica è all'inizio di `game.js`: Fullscreen API più blocco in orizzontale, e su iPhone un messaggio per aggiungere il gioco alla schermata Home.
 - **Danni**: `applyHit` applica forza, difesa, abilità passive, barra Rabbia/Super e modalità allenamento.
 
 ## Personaggi (CHARS / STATS / PAL / headXxx)
