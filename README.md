@@ -17,6 +17,7 @@ Se il browser non lo rileva subito, premi un pulsante del joypad con la pagina a
 Arcade, Versus CPU, 2 Giocatori, **Rissa a 4**, Sopravvivenza, Allenamento, Opzioni (difficoltà, round, tempo, musica).
 
 **Rissa a 4**: fino a quattro lottatori insieme, in due varianti, *tutti contro tutti* (vince l'ultimo in piedi) o *2 contro 2* a squadre, rossa contro blu. Scegli quanti giocatori sono umani: i posti liberi li prende la CPU. P1 usa la tastiera WASD o il joypad 1, P2 le frecce o il joypad 2, P3 e P4 i joypad 3 e 4.
+Nella Rissa a 4 l'arena è più larga, la camera allarga lo zoom quando i lottatori si allontanano e ci sono tre piattaforme (ci si sale saltando, si scende con **giù + salto**). Ognuno ha **2 vite**: al primo K.O. rientra dall'alto, al secondo è fuori. Si vince solo per K.O., non si esce dal ring.
 
 ## Personaggi
 Badilino, Il Pitti, Bombarolo, Lollo Miao, Giuso, Bingo Baby, Michelo.
