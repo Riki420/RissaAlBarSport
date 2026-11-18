@@ -16,7 +16,7 @@ Se il browser non lo rileva subito, premi un pulsante del joypad con la pagina a
 Arcade, Versus CPU, 2 Giocatori, Sopravvivenza, Allenamento, Opzioni (difficoltà, round, tempo, musica).
 
 ## Personaggi
-Badilino, Il Pitti, Bombarolo, Lollo Miao, Giuso, Bingo Baby.
+Badilino, Il Pitti, Bombarolo, Lollo Miao, Giuso, Bingo Baby, Michelo.
 Arene: Bar Sport, Bayon's Caffè, Da Ceppo (sala giochi con biliardo, calciobalilla e flipper).
 
 ## Online e sul telefono

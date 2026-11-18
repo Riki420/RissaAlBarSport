@@ -32,6 +32,9 @@ Picchiaduro arcade 2D in pixel art per browser, in stile Street Fighter. Tutto g
 | lollo | Lollo Miao (barista col grembiule) | Urlo Miaooo (anelli sonori) | Sette vite |
 | giuso | Giuso (contadino di Fradusto, cappello di paglia "SARDEGNA") | Trattore di Fradusto (rasoterra) | Doppio salto |
 | bingo | Bingo Baby (ubriaca, barcolla, "HIC!") | Rutto Alcolico (nube lenta) | Barcollo |
+| michelo | Michelo (ricci scuri, giacca verde-grigia; lancia banchi e fa smorfie a lezione) | Lancio del Banco (parabola, si spacca a terra con `breakDesk`) | Smorfia: 20% di stordimento extra |
+
+- La faccia di Michelo ha due versioni: `headMichelo(R,P,grin)`. La smorfia (occhi storti e linguaccia) compare nel rilascio della speciale, nella vittoria e per 45 frame quando scatta l'abilità (`f.smirk`). In `poseOf` queste pose hanno la chiave con il suffisso `g`.
 
 - Per **aggiungere un personaggio** servono una voce in `CHARS`, `STATS`, `PAL`, `SPEC_LINES` e `IDS`, una funzione `headNome`, i dettagli del busto in `buildSprite`, la posa della speciale in `poseOf`, il proiettile in `spawnProj1`, `updateProjs` e `drawProj`, e il colore della scintilla in `applyHit`.
 - Personaggi rappresentati: amici dell'utente, con soprannomi scherzosi. **Non** si aggiungono personaggi famosi reali né marchi registrati: per esempio lo stemma sul cappello di Danielino è generico (Danielino è stato rimosso, ma il codice è ancora presente).
