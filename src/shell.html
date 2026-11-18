@@ -44,11 +44,14 @@
   body.touch #help{display:none}
   #fs{display:none;position:fixed;top:6px;right:6px;z-index:20;width:40px;height:40px;font-size:20px;line-height:1;color:#fff;background:rgba(40,30,70,.6);border:2px solid rgba(255,255,255,.4);border-radius:8px;padding:0}
   body.touch #fs{display:block}
+  #pz{display:none;position:fixed;top:52px;right:6px;z-index:20;width:40px;height:40px;font-size:14px;line-height:1;color:#fff;background:rgba(40,30,70,.6);border:2px solid rgba(255,255,255,.4);border-radius:8px;padding:0;font-family:inherit}
+  body.touch #pz{display:block}
   body.touch #wrap{inset:0 0 0 0;align-items:flex-start;padding-top:8px}
 </style>
 </head>
 <body>
 <button id="fs" aria-label="Schermo intero">&#x26F6;</button>
+<button id="pz" aria-label="Pausa">&#x275A;&#x275A;</button>
 <div id="wrap"><canvas id="c"></canvas></div>
 <div id="help">
   <span><b>P1</b> A/D muovi · W salta · S para · F pugno · G calcio · H speciale</span>
