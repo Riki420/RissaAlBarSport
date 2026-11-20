@@ -8,6 +8,7 @@ Apri `index.html` con un browser (Chrome, Edge, Firefox).
 **P1:** A/D muovi · W salta · S para · F pugno · G calcio · H speciale
 **P2:** frecce · K pugno · L calcio · Ò (o tastierino 1/2/3)
 **Presa (wrestling):** avanti + pugno quando sei vicino all'avversario. Funziona anche se l'avversario para.
+**Trasformazioni:** quando la barra Super è piena, premi **giù + speciale** e il personaggio si trasforma per circa 20 secondi: più forte, più veloce, con una speciale nuova. Per ora: Badilino diventa **Badilin Jackson** (moonwalk e note musicali), il Pitti diventa **l'uomo che cammina nel buio** (l'arena si oscura, lui diventa invisibile a tratti e lancia ombre che accecano).
 **Armi:** ogni tanto cadono dal cielo una mazza o un coltello: passaci sopra e premi **S** per raccoglierli. Con l'arma il pugno diventa un colpo d'arma; dopo qualche colpo si rompe. Armi e schizzi di sangue si possono spegnere nelle Opzioni.
 **Altro:** INVIO conferma · ESC pausa · M audio · N musica · T manichino (allenamento)
 
